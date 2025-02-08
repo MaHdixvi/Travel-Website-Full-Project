@@ -18,17 +18,97 @@ window.addEventListener("scroll", function () {
 gsap.registerPlugin(ScrollTrigger)
 
 // GSAP ANIMATION
-const timeline = gsap.timeline({
-	defaults: { duration: 1, ease: "linear" },
+
+
+
+
+gsap.from("header .logo", {
+	opacity: 0,
+	y: "-100%",
+	scrollTrigger: {
+		trigger: ".home",
+		start: "top 99%",
+	},
+})
+gsap.from("header .menu1 > *", {
+	opacity: 0,
+	y: "-100%",
+	stagger: 0.3,
+	delay: 0.3,
+	scrollTrigger: {
+		trigger: ".home",
+		start: "top 99%",
+	},
 })
 
-timeline
-	.from("header > *", { y: "-100%", opacity: 0, stagger: 0.3 })
-	.from(".home-text h5", { x: "-100%", opacity: 0 }, "-=0.7")
-	.from(".home-text h1", { x: "-100%", opacity: 0 }, "-=0.6")
-	.from(".home-text p", { x: "-100%", opacity: 0 }, "-=0.5")
-	.to(".btn1", { opacity: 1, x: "0" }, "-=0.4")
-	.from(".icons > *", { opacity: 0, stagger: 0.2 }, "-=0.8")
+gsap.from("header form", {
+	opacity: 0,
+	y: "-100%",
+	stagger: 0.3,
+	delay: 0.6,
+	scrollTrigger: {
+		trigger: ".home",
+		start: "top 99%",
+	},
+})
+
+gsap.from(".home .home-text h5", {
+	opacity: 0,
+	x: "-100%",
+	delay: 0.8,
+	scrollTrigger: {
+		trigger: ".home",
+		start: "top 99%",
+	},
+})
+
+gsap.from(".home .home-text h1", {
+	opacity: 0,
+	x: "-100%",
+	delay: 1.2,
+	scrollTrigger: {
+		trigger: ".home",
+		start: "top 99%",
+	},
+})
+
+gsap.from(".home .home-text p", {
+	opacity: 0,
+	x: "-100%",
+	delay: 1.4,
+	scrollTrigger: {
+		trigger: ".home",
+		start: "top 99%",
+	},
+})
+gsap.from(".home .home-text .btn1", {
+	opacity: 0,
+	x: "-100%",
+	delay: 1.4,
+	scrollTrigger: {
+		trigger: ".home",
+		start: "top 99%",
+	},
+})
+gsap.from(".home .icons > *", {
+	opacity: 0,
+	y: "100%",
+	delay: 1.6,
+	stagger: 0.3,
+	scrollTrigger: {
+		trigger: ".home",
+		start: "top 99%",
+	},
+})
+
+
+
+
+
+
+
+
+
 
 gsap.from(".feature-content > *", {
 	opacity: 0,
