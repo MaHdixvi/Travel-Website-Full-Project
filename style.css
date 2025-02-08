@@ -179,6 +179,7 @@ header.sticky {
 
 section {
 	padding: 70px 10% 60px;
+	overflow: hidden;
 }
 
 .home {
@@ -234,11 +235,28 @@ section {
 	border: 1px solid #ffd6c6;
 	cursor: pointer;
 	transition: all 0.3s ease;
+	opacity: 0;
+}
+
+.btn2 {
+	display: inline-block;
+	padding: 20px 40px;
+	border-radius: var(--Border);
+	background-color: var(--OrangeHover);
+	color: var(--White);
+	font-size: var(--H);
+	border: 1px solid #ffd6c6;
+	cursor: pointer;
+	transition: all 0 ease;
 }
 
 .btn1:hover {
 	background-color: transparent;
 	transform: translateX(10px);
+	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
+}
+.btn2:hover {
+	background-color: transparent;
 	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.3);
 }
 
@@ -459,7 +477,10 @@ section {
 }
 
 .info-container .box {
-	padding: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 100px 70px;
 	background-color: gray;
 	border-radius: var(--Border);
 	text-align: center;
@@ -619,6 +640,14 @@ section {
 .footer .bottom-content span {
 	font-size: 16px;
 	color: var(--White);
+}
+
+.footer .bottom-content .name{
+margin-left: 15px;
+}
+.footer .bottom-content a{
+	color: var(--OrangeHover);
+	font-weight: 900;
 }
 
 .footer .bottom-content .socials i {

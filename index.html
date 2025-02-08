@@ -18,20 +18,20 @@
 <!-- Header  -->
 <header>
 
-    <div class="logo"><a href=""><img src="images/VOYAA.png" alt="logo strony"></a></div>
+    <div class="logo"><a href="#home"><img src="images/VOYAA.png" alt="logo strony"></a></div>
     <nav>
         <ul class="menu1" #>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Information</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#holiday">Destination</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#news">Contact</a></li>
         </ul>
         <ul class="sidebar">
             <li><a href="#"><i onclick="closeSidebar()" class='bx bx-x close'></i></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Information</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#feature">Features</a></li>
+            <li><a href="#holiday">Destination</a></li>
+            <li><a href="#information">Information</a></li>
+            <li><a href="#news">Contact</a></li>
         </ul>
     </nav>
     <form action="#">
@@ -43,7 +43,7 @@
 
 <!-- Home Section -->
 
-<section class="home">
+<section class="home" id="home">
 
     <div class="home-text">
         <h5>Let’s</h5>
@@ -51,13 +51,13 @@
         <p>Adventure is calling, and it's waiting for you to answer. Whether you're craving outdoor thrills, cultural
             immersion, or relaxation in a beautiful setting, we've got everything you need to make your next trip
             unforgettable. Let’s start planning and turn those travel dreams into reality.</p>
-        <a class="btn1" href="#">Book a Trip</a>
+        <button class="btn1">Book a Trip</button>
     </div>
 
     <div class="icons">
-        <a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-        <a href="#" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-        <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+        <a href="https://www.behance.net/kamilkozio2" target="_blank"><i class='bx bxl-behance'></i></i></a>
+        <a href="https://github.com/kamilkoziol5" target="_blank"><i class='bx bxl-github'></i></i></a>
+        <a href="https://dribbble.com/KamilKoziol" target="_blank"><i class='bx bxl-dribbble'></i></i></a>
     </div>
 
 </section>
@@ -66,7 +66,7 @@
 <!-- Features Section -->
 
 
-<section class="feature">
+<section class="feature" id="feature">
     <div class="feature-content">
         <div class="row">
             <div class="row-photo"><img src="images/Ski Tour.jpg" alt=""></div>
@@ -95,7 +95,7 @@
 <!-- Holiday Section -->
 
 
-<section class="holiday">
+<section class="holiday" id="holiday">
     <div class="holiday-img img1">
         <img src="images/Bali Waterfall.jpg" alt="">
     </div>
@@ -104,7 +104,7 @@
         <h2>The Ultimate Tropical Escape</h2>
         <p>Dive into the heart of Central America with a tour of Costa Rica’s lush rainforests and diverse wildlife.
             Whether you’re zip-lining or exploring the Arenal Volcano, Costa Rica offers thrills and serenity.</p>
-        <a class="btn1" href="#">Book a Trip</a>
+        <button class="btn2">Book a Trip</button>
     </div>
     <div class="holiday-img img2">
         <img src="images/Matchu Pitchi.jpg" alt="">
@@ -114,7 +114,7 @@
         <h2>The Lost City of the Incas</h2>
         <p>Step back in time as you trek through the Inca Trail to one of the most iconic archaeological sites in the
             world. Experience the magic of Machu Picchu with a guided tour that reveals its fascinating history.</p>
-        <a class="btn1" href="#">Book a Trip</a>
+        <button class="btn2">Book a Trip</button>
     </div>
     <div class="holiday-img img3">
         <img src="images/Sawanna.jpg" alt="">
@@ -125,7 +125,7 @@
         <p>Embark on a thrilling safari adventure through Kenya's iconic national parks. Witness the incredible wildlife
             in their natural habitat, from the Big Five to breathtaking landscapes. Experience the ultimate wildlife
             encounter today!</p>
-        <a class="btn1" href="#">Book a Trip</a>
+        <button class="btn2">Book a Trip</button>
     </div>
 
 </section>
@@ -159,14 +159,14 @@
         </div>
     </div>
     <div class="center-btn">
-        <a href="#" class="btn1">See All</a>
+        <a href="#" class="btn2">See All</a>
     </div>
 </section>
 
 
 <!-- Information Section -->
 
-<section class="information">
+<section class="information" id="information">
     <div class="center-text">
         <h3>Travel Information</h3>
     </div>
@@ -201,7 +201,7 @@
 
 <!-- Newsletter Section -->
 
-<section class="news">
+<section class="news" id="news">
     <div class="news-content">
         <div class="text-box">
             <h3>Ready to Explore?</h3>
@@ -210,7 +210,7 @@
 
         <form action="#">
             <input type="email" placeholder="Enter your email..." required>
-            <input class="btn1" type="submit" value="Get Started">
+            <input class="btn2" type="submit" value="Get Started">
         </form>
     </div>
 </section>
@@ -221,20 +221,24 @@
 <footer>
     <section class="footer">
         <div class="logo">
-            <img src="images/VOYAA2.png" alt="">
+            <a href="index.html"><img src="images/VOYAA2.png" alt=""></a>
         </div>
         <div class="bottom-content">
-            <span>© 2025 VOYA. All rights reserved. | Privacy Policy | Terms & Conditions</span>
+            <span>© 2025 VOYA. All rights reserved. <span class="name">Designed by<a
+                        href="mailto:kamilkoziol529@gmail.com"> Kamil Koziol</a></span></span>
 
             <div class="socials">
-                <a href="#" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
-                <a href="#" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.behance.net/kamilkozio2" target="_blank"><i class='bx bxl-behance'></i></i></a>
+                <a href="https://github.com/kamilkoziol5" target="_blank"><i class='bx bxl-github'></i></i></a>
+                <a href="https://dribbble.com/KamilKoziol" target="_blank"><i class='bx bxl-dribbble'></i></i></a>
             </div>
         </div>
 
     </section>
 </footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
 <script src="js.js"></script>
