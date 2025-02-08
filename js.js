@@ -19,9 +19,6 @@ gsap.registerPlugin(ScrollTrigger)
 
 // GSAP ANIMATION
 
-
-
-
 gsap.from("header .logo", {
 	opacity: 0,
 	y: "-100%",
@@ -101,23 +98,16 @@ gsap.from(".home .icons > *", {
 	},
 })
 
-
-
-
-
-
-
-
-
-
 gsap.from(".feature-content > *", {
 	opacity: 0,
-	y: "50%",
+	y: "20%",
 	clearProps: "all",
 	stagger: 0.2,
 	scrollTrigger: {
 		trigger: ".feature-content",
 		start: "top 99%",
+		end: "bottom 90%",
+		scrub: true,
 	},
 })
 
@@ -208,6 +198,7 @@ gsap.from(".tour-content > *", {
 		start: "top 90%",
 	},
 })
+
 gsap.from(".center-btn", {
 	opacity: 0,
 	y: "100%",
@@ -304,10 +295,9 @@ gsap.from(".footer .logo", {
 	},
 })
 
-
-gsap.from(".footer .bottom-content span",{
+gsap.from(".footer .bottom-content span", {
 	opacity: 0,
-	x:"-100%",
+	x: "-100%",
 	duration: 1.2,
 	stagger: 0.3,
 	scrollTrigger: {
@@ -315,9 +305,9 @@ gsap.from(".footer .bottom-content span",{
 		start: "top 90%",
 	},
 })
-gsap.from(".footer .bottom-content .socials > *",{
+gsap.from(".footer .bottom-content .socials > *", {
 	opacity: 0,
-	x:"100%",
+	x: "100%",
 	duration: 1.2,
 	stagger: 0.2,
 	delay: 0.3,
@@ -326,4 +316,3 @@ gsap.from(".footer .bottom-content .socials > *",{
 		start: "top 60%",
 	},
 })
-
