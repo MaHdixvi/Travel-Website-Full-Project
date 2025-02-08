@@ -190,12 +190,14 @@ gsap.from(".popular .center-text", {
 gsap.from(".tour-content > *", {
 	opacity: 0,
 	y: "100%",
-	duration: 1,
+	duration: 0.2,
 	rotate: 25,
-	stagger: 0.3,
+	stagger: 0.2,
 	scrollTrigger: {
 		trigger: ".popular",
-		start: "top 90%",
+		start: "top 100%",
+		end: "bottom 99%",
+		scrub: 0.5,
 	},
 })
 
@@ -204,10 +206,11 @@ gsap.from(".center-btn", {
 	y: "100%",
 	duration: 1,
 	rotate: 25,
-	stagger: 0.3,
 	scrollTrigger: {
 		trigger: ".center-btn",
-		start: "top 80%",
+		start: "top 100%",
+		end: "bottom 100%",
+		scrub: true,
 	},
 })
 gsap.from(".information .center-text", {
@@ -223,45 +226,46 @@ gsap.from(".information .center-text", {
 
 gsap.from(".info-container .box1", {
 	opacity: 0,
-	x: "-100%",
-	rotate: 25,
-	duration: 1,
+	scale: 0,
+	rotate: 5,
 	scrollTrigger: {
-		trigger: ".info-container",
-		start: "top 90%",
+		trigger: ".info-container .box1",
+		start: "top 100%",
+		end: "bottom 100%",
+		scrub: true,
 	},
 })
 gsap.from(".info-container .box2", {
 	opacity: 0,
-	x: "100%",
-	rotate: 25,
-	duration: 1,
+	scale: 0,
+	rotate: 5,
 	scrollTrigger: {
-		trigger: ".info-container",
-		start: "top 90%",
+		trigger: ".info-container .box2",
+		start: "top 100%",
+		end: "bottom 99%",
+		scrub: true,
 	},
 })
 gsap.from(".info-container .box3", {
 	opacity: 0,
-	x: "-100%",
-	y: "100%",
-	rotate: 25,
-	duration: 1,
+	scale: 0,
+	rotate: 5,
 	scrollTrigger: {
-		trigger: ".info-container",
-		start: "top 90%",
+		trigger: ".info-container .box3",
+		start: "top 100%",
+		end: "bottom 100%",
+		scrub: true,
 	},
 })
-
 gsap.from(".info-container .box4", {
 	opacity: 0,
-	x: "100%",
-	y: "100%",
-	rotate: 25,
-	duration: 1,
+	scale: 0,
+	rotate: 5,
 	scrollTrigger: {
-		trigger: ".info-container",
-		start: "top 90%",
+		trigger: ".info-container .box4",
+		start: "top 100%",
+		end: "bottom 100%",
+		scrub: true,
 	},
 })
 
