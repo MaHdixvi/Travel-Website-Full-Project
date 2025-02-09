@@ -190,14 +190,14 @@ gsap.from(".popular .center-text", {
 gsap.from(".tour-content > *", {
 	opacity: 0,
 	y: "100%",
-	duration: 0.2,
+	duration: 1.2,
 	rotate: 25,
-	stagger: 0.2,
+	stagger: 1.2,
 	scrollTrigger: {
 		trigger: ".popular",
-		start: "top 100%",
-		end: "bottom 99%",
-		scrub: 0.5,
+		start: "top 80%",
+		end: "top 60%",
+		scrub: 2.5,
 	},
 })
 
@@ -319,4 +319,12 @@ gsap.from(".footer .bottom-content .socials > *", {
 		trigger: ".footer",
 		start: "top 60%",
 	},
+})
+
+
+gsap.from(".bx", {
+	opacity: 0,
+	y: "-300px",
+	scale: 0,
+	duration:0.5,
 })
